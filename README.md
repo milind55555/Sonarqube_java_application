@@ -305,6 +305,10 @@ Sonarqube_java_application
 ```
 
 ---
+Output:
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/5a47da7d-439b-466f-bc45-25df00088968" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/6d15bec9-1c93-4e6d-b89f-c0762e50d280" />
+
 
 # 📌 Future Improvements
 

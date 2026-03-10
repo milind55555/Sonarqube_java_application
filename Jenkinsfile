@@ -1,11 +1,28 @@
 pipeline {
     agent any
 
+    tools {
+        maven 'Maven'
+    }
+
     environment {
         SONAR_TOKEN = credentials('sonar-token')
     }
 
     stages {
+
+        stage('Checkout Code') {
+            steps {
+                git 'https://github.com/milind55555/Sonarqube_java_application'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                sh 'mvn clean package'
+            }
+        }
+
         stage('SonarQube Analysis') {
             steps {
                 withSonarQubeEnv('SonarQube') {
